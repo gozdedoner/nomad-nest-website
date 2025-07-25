@@ -5,9 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact | Nomad Nest</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
   </head>
   <body>
@@ -33,19 +39,35 @@
       <section class="contact-section">
         <h2>Contact Us</h2>
         <p>
-          We'd love to hear from you! Fill out the form below and we'll get back
-          to you as soon as we can.
+          We’d love to hear from you. Fill out the form below to get in touch.
         </p>
-
         <form class="contact-form">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required />
+          <label for="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your name"
+            required
+          />
 
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required />
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="you@example.com"
+            required
+          />
 
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" rows="5" required></textarea>
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            placeholder="Your message here..."
+            required
+          ></textarea>
 
           <button type="submit">Send Message</button>
         </form>
@@ -55,10 +77,18 @@
     <footer>
       <p>&copy; 2025 Nomad Nest. Designed with care for the planet.</p>
       <div class="social-media">
-        <a href="https://facebook.com" target="_blank">Facebook</a> |
-        <a href="https://instagram.com" target="_blank">Instagram</a> |
-        <a href="https://linkedin.com" target="_blank">LinkedIn</a> |
-        <a href="https://github.com" target="_blank">GitHub</a>
+        <a href="https://facebook.com" target="_blank"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+        <a href="https://instagram.com" target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a href="https://linkedin.com" target="_blank"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+        <a href="https://github.com" target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
       </div>
     </footer>
   </body>
