@@ -14,7 +14,7 @@ body {
 /* Header */
 header {
   background-color: #1f2937;
-  padding: 10px 100px; /* Üst ve alt padding azaltıldı */
+  padding: 10px 100px;
   color: #f9faf8;
 }
 
@@ -22,7 +22,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* margin-bottom kaldırıldı, gereksiz boşluk giderildi */
 }
 
 .logo {
@@ -47,12 +46,13 @@ header {
   color: #f9faf8;
 }
 
+/* Hero Section */
 .hero-section {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 50px;
-  padding: 50px; /* İç boşluklar azaltıldı */
+  padding: 50px;
   margin: 40px;
   background-color: #1f2937;
   color: #f9faf8;
@@ -105,7 +105,7 @@ main {
   padding: 2em;
 }
 
-/* Info Boxes - YAZI BOYUTLARI GÜNCELLENDİ */
+/* Info Boxes - FONT SIZES UPDATED */
 .info {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -118,20 +118,20 @@ main {
   padding: 1.5em;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  border: 2px solid #3882f6; /* Mavi çerçeve */
+  border: 2px solid #3882f6; /* Blue border */
 }
 
 .info-box h2 {
-  font-size: 22px; /* Font boyutu küçültüldü */
+  font-size: 22px; /* Font size reduced */
   font-weight: 800;
   color: #1f2937;
-  margin-bottom: 0.5em; /* Başlık ve paragraf arasına boşluk eklendi */
+  margin-bottom: 0.5em; /* Space between heading and paragraph */
 }
 
 .info-box p {
   color: #1f2937;
-  font-size: 16px; /* Paragraf için standart bir boyut belirlendi */
-  line-height: 1.4; /* Okunabilirlik artırıldı */
+  font-size: 16px; /* Standard size for paragraph */
+  line-height: 1.4; /* Increased readability */
 }
 
 /* Quote Section */
@@ -147,14 +147,14 @@ main {
   margin: 2em 0;
 }
 
-/* Call to Action - YENİDEN DÜZENLENDİ */
+/* Call to Action - REDESIGNED */
 .cta {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #3882f6; /* Arka plan rengi olarak mavi kullanıldı */
-  color: #f9faf8; /* İçindeki yazı rengi beyaz yapıldı */
-  padding: 3em 2em; /* Yüksekliği artırmak için iç boşluklar eklendi */
+  background-color: #3882f6; /* Blue background color */
+  color: #f9faf8; /* White text color */
+  padding: 3em 2em; /* Added padding to increase height */
   margin: 3em;
   border-radius: 8px;
 }
@@ -165,10 +165,10 @@ main {
   padding: 0;
 }
 
-/* CTA bölümü içindeki butona özel stil */
+/* Specific style for the button inside CTA */
 .cta .button {
-  background-color: #3882f6; /* Arka plan rengi ana bölümle aynı */
-  border: 2px solid #f9faf8; /* Referans tasarımdaki gibi beyaz çerçeve eklendi */
+  background-color: #3882f6; /* Same background color as the main section */
+  border: 2px solid #f9faf8; /* White border as in the reference design */
   color: #f9faf8;
   padding: 0.8em 2em;
   border-radius: 8px;
@@ -178,10 +178,9 @@ main {
 }
 
 .cta .button:hover {
-  background-color: #f9faf8; /* Butonun üzerine gelince arka plan beyaz */
-  color: #3882f6; /* Yazı rengi mavi olur */
+  background-color: #f9faf8; /* White background on hover */
+  color: #3882f6; /* Blue text on hover */
 }
-
 
 /* Footer */
 footer {
@@ -322,26 +321,195 @@ footer .social-media a:hover {
   background-color: #2c6ddf;
 }
 
-/* Responsive Design - YENİDEN DÜZENLENDİ */
+/* --- Simple About & Models Pages --- */
+
+/* Page Header */
+.page-header {
+  text-align: center;
+  padding: 2rem;
+  background-color: #f9faf8;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.page-header h1 {
+  font-size: 32px;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+
+.page-header p {
+  font-size: 18px;
+  color: #6b7280;
+}
+
+/* Centered sections with a plain background */
+.story,
+.values,
+.team {
+  background-color: #f9faf8;
+  padding: 2.5rem;
+  border-radius: 12px;
+  margin: 2rem auto;
+  max-width: 1000px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+/* Clear and prominent headings */
+.story h2,
+.values h2,
+.team h2 {
+  font-size: 28px;
+  color: #1f2937;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-weight: 800;
+}
+
+/* Values and Team grid structure */
+.values-grid,
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Cards */
+.value,
+.team-member {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 2px solid #3882f6;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.value:hover,
+.team-member:hover {
+  transform: translateY(-5px);
+}
+
+/* Simple and consistent paragraphs */
+.value p,
+.team-member p {
+  font-size: 16px;
+  color: #374151;
+  line-height: 1.5;
+}
+
+/* Models Section */
+.models {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Each model card */
+.model {
+  background-color: #ffffff;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  border-radius: 12px;
+  border: 2px solid #dbeafe;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.model:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+/* Model headings */
+.model h2 {
+  font-size: 24px;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+
+/* Price section */
+.model .price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #3882f6;
+  margin-bottom: 1rem;
+}
+
+/* Specs and features areas */
+.specs,
+.features {
+  background-color: #f9faf8;
+  padding: 1rem;
+  border-radius: 8px;
+  margin: 1rem 0;
+  font-size: 16px;
+  color: #374151;
+  line-height: 1.5;
+}
+
+/* Customize Section */
+.customization {
+  text-align: center;
+  padding: 2.5rem 1rem;
+  background-color: #f9faf8;
+  margin-top: 3rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.customization h2 {
+  font-size: 24px;
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
+
+.customization p {
+  font-size: 16px;
+  color: #4b5563;
+  margin-bottom: 1.5rem;
+}
+
+.customization .button {
+  background-color: #3882f6;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.customization .button:hover {
+  background-color: #2563eb;
+}
+
+/* --- Responsive Design --- */
 @media (max-width: 768px) {
-  header {
-    padding: 10px 20px; /* Mobil için padding ayarı */
+  /* General Adjustments for Mobile */
+  main {
+    padding: 1em;
   }
 
+  header {
+    padding: 15px 20px; /* Adjust header padding for mobile */
+  }
+
+  /* Header Layout */
   .header-top {
-    flex-direction: column; /* Logoyu ve linkleri alt alta getir */
+    flex-direction: column; /* Stack logo and nav links */
     gap: 15px;
   }
 
   .nav-links {
-    flex-direction: column; /* Navigasyon linklerini dikey yap */
+    flex-direction: column; /* Stack nav links vertically */
     gap: 10px;
     align-items: center;
     width: 100%;
   }
-  
+
+  /* Hero Section Layout */
   .hero-section {
-    flex-direction: column; /* Hero bölümünü dikey yap */
+    flex-direction: column; /* Stack hero content vertically */
     padding: 30px 20px;
     margin: 20px;
     text-align: center;
@@ -352,135 +520,60 @@ footer .social-media a:hover {
   }
 
   .hero-content h1 {
-    font-size: 36px; /* Mobil için font boyutu */
+    font-size: 36px; /* Adjust font size for mobile */
   }
 
+  /* Info Boxes Layout */
   .info {
-    grid-template-columns: 1fr; /* Info kutularını tek sütun yap */
+    grid-template-columns: 1fr; /* Make info boxes a single column */
   }
 
-  main {
-    padding: 1em;
+  /* Quote Section Font Size */
+  .quote blockquote {
+    font-size: 24px;
   }
-}
 
-/* Simple About & Models Pages */
-.page-header {
-  text-align: center;
-  padding: 2rem;
-  background-color: #f9faf8;
-}
+  /* Call to Action Layout */
+  .cta {
+    flex-direction: column; /* Stack CTA content */
+    text-align: center;
+    gap: 1.5em;
+    padding: 2em 1em;
+    margin: 2em 1em;
+  }
 
-.page-header h1 {
-  font-size: 32px;
-  color: #1f2937;
-  margin-bottom: 1rem;
-}
+  /* Generic Sections Padding */
+  .story,
+  .values,
+  .team,
+  .models,
+  .customization {
+    padding: 1.5rem;
+    margin: 1.5rem auto;
+  }
 
-.page-header p {
-  font-size: 18px;
-  color: #6b7280;
-}
+  /* Font Size Adjustments for Headings */
+  .story h2,
+  .values h2,
+  .team h2 {
+    font-size: 24px;
+  }
 
-.story,
-.values,
-.team {
-  padding: 2rem;
-  max-width: 1000px;
-  margin: 0 auto;
-}
+  .contact-section h2,
+  .gallery-section h2 {
+    font-size: 28px;
+  }
 
-.story h2,
-.values h2,
-.team h2 {
-  font-size: 28px;
-  color: #1f2937;
-  margin-bottom: 1rem;
-  text-align: center;
-}
+  /* Models Section on Mobile */
+  .model {
+    padding: 1.5rem;
+  }
 
-.values-grid,
-.team-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
-}
+  .model h2 {
+    font-size: 20px;
+  }
 
-.value,
-.team-member {
-  background-color: #fff;
-  padding: 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.models {
-  padding: 2rem;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.model {
-  background-color: #fff;
-  margin-bottom: 2rem;
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.model h2 {
-  font-size: 24px;
-  color: #1f2937;
-  margin-bottom: 0.5rem;
-}
-
-.model .price {
-  font-size: 20px;
-  font-weight: bold;
-  color: #3882f6;
-  margin-bottom: 1rem;
-}
-
-.specs,
-.features {
-  background-color: #f9faf8;
-  padding: 1rem;
-  border-radius: 5px;
-  margin: 1rem 0;
-}
-
-.customization {
-  text-align: center;
-  padding: 2rem;
-  background-color: #f9faf8;
-}
-
-.customization .button {
-  background-color: #3882f6;
-  color: white;
-}
-
-
-.button {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #005f73;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-  margin-top: 10px;
-}
-
-.button:hover {
-  background-color: #0a9396;
-}
-
-.button.secondary {
-  background-color: #94d2bd;
-  color: #003845;
-  margin-left: 10px;
-}
-
-.button.secondary:hover {
-  background-color: #e0f2f1;
+  .model .price {
+    font-size: 18px;
+  }
 }
