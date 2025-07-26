@@ -14,7 +14,7 @@ body {
 /* Header */
 header {
   background-color: #1f2937;
-  padding: 20px 100px;
+  padding: 10px 100px; /* Üst ve alt padding azaltıldı */
   color: #f9faf8;
 }
 
@@ -22,7 +22,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 80px;
+  /* margin-bottom kaldırıldı, gereksiz boşluk giderildi */
 }
 
 .logo {
@@ -52,7 +52,7 @@ header {
   align-items: center;
   justify-content: space-between;
   gap: 50px;
-  padding: 100px;
+  padding: 50px; /* İç boşluklar azaltıldı */
   margin: 40px;
   background-color: #1f2937;
   color: #f9faf8;
@@ -105,8 +105,7 @@ main {
   padding: 2em;
 }
 
-/* Info Boxes */
-/* Info Boxes */
+/* Info Boxes - YAZI BOYUTLARI GÜNCELLENDİ */
 .info {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -123,13 +122,16 @@ main {
 }
 
 .info-box h2 {
-  font-size: 36px;
-  font-weight: 800; /* Extra-bold */
+  font-size: 22px; /* Font boyutu küçültüldü */
+  font-weight: 800;
   color: #1f2937;
+  margin-bottom: 0.5em; /* Başlık ve paragraf arasına boşluk eklendi */
 }
 
 .info-box p {
   color: #1f2937;
+  font-size: 16px; /* Paragraf için standart bir boyut belirlendi */
+  line-height: 1.4; /* Okunabilirlik artırıldı */
 }
 
 /* Quote Section */
@@ -145,25 +147,41 @@ main {
   margin: 2em 0;
 }
 
-/* Call to Action */
+/* Call to Action - YENİDEN DÜZENLENDİ */
 .cta {
-  text-align: center;
-  margin-top: 3em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #3882f6; /* Arka plan rengi olarak mavi kullanıldı */
+  color: #f9faf8; /* İçindeki yazı rengi beyaz yapıldı */
+  padding: 3em 2em; /* Yüksekliği artırmak için iç boşluklar eklendi */
+  margin: 3em;
+  border-radius: 8px;
 }
 
-.button {
-  background-color: #3882f6;
+.cta h3 {
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+/* CTA bölümü içindeki butona özel stil */
+.cta .button {
+  background-color: #3882f6; /* Arka plan rengi ana bölümle aynı */
+  border: 2px solid #f9faf8; /* Referans tasarımdaki gibi beyaz çerçeve eklendi */
   color: #f9faf8;
-  padding: 0.8em 1.5em;
-  border-radius: 5px;
+  padding: 0.8em 2em;
+  border-radius: 8px;
   text-decoration: none;
-  display: inline-block;
-  margin-top: 1em;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.button:hover {
-  background-color: #3882f6;
+.cta .button:hover {
+  background-color: #f9faf8; /* Butonun üzerine gelince arka plan beyaz */
+  color: #3882f6; /* Yazı rengi mavi olur */
 }
+
 
 /* Footer */
 footer {
@@ -304,23 +322,45 @@ footer .social-media a:hover {
   background-color: #2c6ddf;
 }
 
-/* Responsive Design */
+/* Responsive Design - YENİDEN DÜZENLENDİ */
 @media (max-width: 768px) {
-  .header-container {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1em;
+  header {
+    padding: 10px 20px; /* Mobil için padding ayarı */
   }
 
-  nav ul {
-    flex-direction: column;
+  .header-top {
+    flex-direction: column; /* Logoyu ve linkleri alt alta getir */
+    gap: 15px;
+  }
+
+  .nav-links {
+    flex-direction: column; /* Navigasyon linklerini dikey yap */
+    gap: 10px;
+    align-items: center;
     width: 100%;
-    gap: 0.5em;
+  }
+  
+  .hero-section {
+    flex-direction: column; /* Hero bölümünü dikey yap */
+    padding: 30px 20px;
+    margin: 20px;
+    text-align: center;
   }
 
-  nav a {
-    display: block;
-    padding: 0.5em 0;
+  .hero-content {
+    padding-right: 0;
+  }
+
+  .hero-content h1 {
+    font-size: 36px; /* Mobil için font boyutu */
+  }
+
+  .info {
+    grid-template-columns: 1fr; /* Info kutularını tek sütun yap */
+  }
+
+  main {
+    padding: 1em;
   }
 }
 
