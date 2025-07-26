@@ -177,10 +177,11 @@ main {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.cta .button:hover {
-  background-color: #f9faf8; 
-  color: #3882f6; 
+.cta-button:hover {
+  background-color: white;
+  color: #3b82f6;
 }
+
 
 /* Footer */
 footer {
@@ -553,6 +554,12 @@ footer .social-media a:hover {
     margin: 2em 1em;
   }
 
+  .cta-button:hover {
+  background-color: white;
+  color: #3b82f6;
+}
+
+
   /* Generic Sections Padding */
   .story,
   .values,
@@ -589,31 +596,8 @@ footer .social-media a:hover {
   }
 }
 
-.cta {
-  background-color: #3b82f6; /* mavi */
-  color: white;
-  padding: 3rem 2rem;
-  border-radius: 10px;
-  margin: 2rem;
-  text-align: center;
-}
 
-.cta-button {
-  display: inline-block;
-  margin-top: 1rem;
-  padding: 0.75rem 1.5rem;
-  border: 2px solid white;
-  border-radius: 5px;
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s, color 0.3s;
-}
 
-.cta-button:hover {
-  background-color: white;
-  color: #3b82f6;
-}
 
 
 
