@@ -65,7 +65,7 @@ header {
 }
 
 .hero-content h1 {
-  font-size: 48px;
+  font-size: 32px;
   font-weight: bolder;
   margin-bottom: 20px;
 }
@@ -105,7 +105,7 @@ main {
   padding: 2em;
 }
 
-/* Info Boxes - FONT SIZES UPDATED */
+/* Info Boxes*/
 .info {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -118,27 +118,27 @@ main {
   padding: 1.5em;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  border: 2px solid #3882f6; /* Blue border */
+  border: 2px solid #3882f6; 
 }
 
 .info-box h2 {
-  font-size: 22px; /* Font size reduced */
+  font-size: 22px; 
   font-weight: 800;
   color: #1f2937;
-  margin-bottom: 0.5em; /* Space between heading and paragraph */
+  margin-bottom: 0.5em; 
 }
 
 .info-box p {
   color: #1f2937;
-  font-size: 16px; /* Standard size for paragraph */
-  line-height: 1.4; /* Increased readability */
+  font-size: 16px; 
+  line-height: 1.4; 
 }
 
 /* Quote Section */
 .quote blockquote {
   font-style: italic;
-  font-size: 36px;
-  font-weight: 300; /* Light */
+  font-size: 28px;
+  font-weight: 300; 
   color: #1f2937;
   background-color: #e5e7eb;
   padding: 1.5em;
@@ -147,14 +147,14 @@ main {
   margin: 2em 0;
 }
 
-/* Call to Action - REDESIGNED */
+/* Call to Action */
 .cta {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #3882f6; /* Blue background color */
-  color: #f9faf8; /* White text color */
-  padding: 3em 2em; /* Added padding to increase height */
+  background-color: #3882f6; 
+  color: #f9faf8; 
+  padding: 3em 2em; 
   margin: 3em;
   border-radius: 8px;
 }
@@ -167,8 +167,8 @@ main {
 
 /* Specific style for the button inside CTA */
 .cta .button {
-  background-color: #3882f6; /* Same background color as the main section */
-  border: 2px solid #f9faf8; /* White border as in the reference design */
+  background-color: #3882f6; 
+  border: 2px solid #f9faf8; 
   color: #f9faf8;
   padding: 0.8em 2em;
   border-radius: 8px;
@@ -178,8 +178,8 @@ main {
 }
 
 .cta .button:hover {
-  background-color: #f9faf8; /* White background on hover */
-  color: #3882f6; /* Blue text on hover */
+  background-color: #f9faf8; 
+  color: #3882f6; 
 }
 
 /* Footer */
@@ -217,13 +217,19 @@ footer .social-media a:hover {
 .gallery-section {
   padding: 50px 20px;
   text-align: center;
-  background-color: #ffffff;
+  background-color: #f9faf8; 
 }
 
 .gallery-section h2 {
-  font-size: 36px;
+  font-size: 30px;
   font-weight: 800;
   color: #1f2937;
+  margin-bottom: 10px;
+}
+
+.gallery-section p {
+  font-size: 18px;
+  color: #6b7280;
   margin-bottom: 30px;
 }
 
@@ -251,6 +257,11 @@ footer .social-media a:hover {
   object-fit: cover;
   display: block;
   border-radius: 8px;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .gallery-item p {
@@ -321,7 +332,7 @@ footer .social-media a:hover {
   background-color: #2c6ddf;
 }
 
-/* --- Simple About & Models Pages --- */
+/* ---  About & Models Pages --- */
 
 /* Page Header */
 .page-header {
@@ -491,17 +502,17 @@ footer .social-media a:hover {
   }
 
   header {
-    padding: 15px 20px; /* Adjust header padding for mobile */
+    padding: 15px 20px; 
   }
 
   /* Header Layout */
   .header-top {
-    flex-direction: column; /* Stack logo and nav links */
+    flex-direction: column; 
     gap: 15px;
   }
 
   .nav-links {
-    flex-direction: column; /* Stack nav links vertically */
+    flex-direction: column; 
     gap: 10px;
     align-items: center;
     width: 100%;
@@ -509,7 +520,7 @@ footer .social-media a:hover {
 
   /* Hero Section Layout */
   .hero-section {
-    flex-direction: column; /* Stack hero content vertically */
+    flex-direction: column; 
     padding: 30px 20px;
     margin: 20px;
     text-align: center;
@@ -520,12 +531,12 @@ footer .social-media a:hover {
   }
 
   .hero-content h1 {
-    font-size: 36px; /* Adjust font size for mobile */
+    font-size: 36px; 
   }
 
   /* Info Boxes Layout */
   .info {
-    grid-template-columns: 1fr; /* Make info boxes a single column */
+    grid-template-columns: 1fr; /
   }
 
   /* Quote Section Font Size */
@@ -535,7 +546,7 @@ footer .social-media a:hover {
 
   /* Call to Action Layout */
   .cta {
-    flex-direction: column; /* Stack CTA content */
+    flex-direction: column; 
     text-align: center;
     gap: 1.5em;
     padding: 2em 1em;
@@ -575,5 +586,60 @@ footer .social-media a:hover {
 
   .model .price {
     font-size: 18px;
+  }
+}
+
+.cta-section {
+  background-color: #3b82f6;
+  color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  margin: 3rem auto;
+  max-width: 90%;
+  display: flex;
+  flex-direction: column; /* mobilde alt alta */
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .cta-section {
+    flex-direction: row; /* büyük ekranda yan yana */
+    justify-content: space-between;
+  }
+}
+
+.cta-section h2 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.cta-button {
+  background-color: transparent;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #fff;
+  color: #3b82f6;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .gallery {
+    padding: 1rem;
+  }
+
+  .gallery-item img {
+    margin-bottom: 1rem;
   }
 }
