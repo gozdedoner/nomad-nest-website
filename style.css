@@ -589,48 +589,31 @@ footer .social-media a:hover {
   }
 }
 
-.cta-section {
-  background-color: #3b82f6;
-  color: #fff;
-  padding: 2rem;
+.cta {
+  background-color: #3b82f6; /* mavi */
+  color: white;
+  padding: 3rem 2rem;
   border-radius: 10px;
-  margin: 3rem auto;
-  max-width: 90%;
-  display: flex;
-  flex-direction: column; /* mobilde alt alta */
-  align-items: center;
-  gap: 1rem;
+  margin: 2rem;
   text-align: center;
 }
 
-@media (min-width: 768px) {
-  .cta-section {
-    flex-direction: row; /* büyük ekranda yan yana */
-    justify-content: space-between;
-  }
-}
-
-.cta-section h2 {
-  font-size: 1.5rem;
-  margin: 0;
-}
-
 .cta-button {
-  background-color: transparent;
-  color: #fff;
+  display: inline-block;
+  margin-top: 1rem;
   padding: 0.75rem 1.5rem;
-  border: 2px solid #fff;
-  border-radius: 8px;
+  border: 2px solid white;
+  border-radius: 5px;
+  color: white;
   text-decoration: none;
   font-weight: bold;
-  transition: all 0.3s ease;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .cta-button:hover {
-  background-color: #fff;
+  background-color: white;
   color: #3b82f6;
 }
-
 
 
 
