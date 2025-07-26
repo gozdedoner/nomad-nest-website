@@ -94,10 +94,10 @@ header {
 
 .hero-image img {
   width: 100%;
-  max-width: 400px; 
+  max-width: 400px;
   height: auto;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 /* Main Content */
@@ -105,6 +105,7 @@ main {
   padding: 2em;
 }
 
+/* Info Boxes */
 /* Info Boxes */
 .info {
   display: grid;
@@ -121,10 +122,25 @@ main {
   border: 2px solid #3882f6; /* Mavi çerçeve */
 }
 
+.info-box h2 {
+  font-size: 36px;
+  font-weight: 800; /* Extra-bold */
+  color: #1f2937;
+}
+
+.info-box p {
+  color: #1f2937;
+}
+
 /* Quote Section */
 .quote blockquote {
   font-style: italic;
-  font-size: 1.3em;
+  font-size: 36px;
+  font-weight: 300; /* Light */
+  color: #1f2937;
+  background-color: #e5e7eb;
+  padding: 1.5em;
+  border-radius: 10px;
   text-align: center;
   margin: 2em 0;
 }
