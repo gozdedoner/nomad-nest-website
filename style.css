@@ -459,3 +459,28 @@ footer .social-media a:hover {
   background-color: #3882f6;
   color: white;
 }
+
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #005f73;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.button:hover {
+  background-color: #0a9396;
+}
+
+.button.secondary {
+  background-color: #94d2bd;
+  color: #003845;
+  margin-left: 10px;
+}
+
+.button.secondary:hover {
+  background-color: #e0f2f1;
+}
